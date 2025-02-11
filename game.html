@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test Game</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.quote-display {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.quote-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Test Game</h1>
+        <div id="quoteDisplay" class="quote-display"></div>
+        <textarea id="quoteInput" class="quote-input" placeholder="Start typing..."></textarea>
+        <div class="stats">
+            <p id="timer">Time: 0s</p>
+            <p id="accuracy">Accuracy: 100%</p>
+            <p id="wpm">WPM: 0</p>
+        </div>
+        <button id="startButton" class="start-button">Start Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
